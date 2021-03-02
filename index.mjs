@@ -1,13 +1,11 @@
-// Notebook
-import notebook from '@keystroke/nodejs'
 import Observable from '@observablehq/runtime'
-
-// Modules
+import notebook from '@keystroke/nodejs'
 import express from 'express';
-const imports = { express };
 
-// Runtime
-const module = new Observable.Runtime().module(notebook);
-module.value('main')
-    .then(main => main({ process, imports }))
-    .catch(error => console.error(error));
+runNotebook(notebook, { process, express });
+
+function runNotebook(notebook, context = {}, cell = 'main') {
+    new Observable.Runtime().module(notebook).value(cell)
+        .then(main => main(context))
+        .catch(console.error.bind(console));
+}

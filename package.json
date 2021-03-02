@@ -1,13 +1,13 @@
 {
   "name": "observablehq",
   "version": "1.0.0",
-  "description": "",
+  "description": "Observable Notebook Server",
   "main": "index.mjs",
   "scripts": {
     "start": "node index.mjs",
-    "refresh": "npm update && npm start"
+    "refresh": "clear && npm update && npm start"
   },
-  "author": "",
+  "author": "Bryant Richardson",
   "license": "ISC",
   "dependencies": {
     "@keystroke/nodejs": "https://api.observablehq.com/@keystroke/nodejs.tgz?v=3",
