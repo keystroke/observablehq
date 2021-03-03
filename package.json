@@ -4,8 +4,8 @@
   "description": "Observable Notebook Server",
   "main": "index.mjs",
   "scripts": {
-    "start": "clear && node index.mjs",
-    "refresh": "clear && npm update && npm start"
+    "start": "node index.mjs",
+    "refresh": "npm update && npm start"
   },
   "author": "Bryant Richardson",
   "license": "ISC",
