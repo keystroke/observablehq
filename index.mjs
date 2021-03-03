@@ -1,5 +1,5 @@
 import Observable from '@observablehq/runtime';
-import notebook from '@keystroke/nodejs';
+import notebook from '@keystroke/observablehq';
 import express from 'express';
 
 runNotebook(notebook, { process, express });

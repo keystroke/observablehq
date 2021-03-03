@@ -4,13 +4,13 @@
   "description": "Observable Notebook Server",
   "main": "index.mjs",
   "scripts": {
-    "start": "node index.mjs",
+    "start": "clear && node index.mjs",
     "refresh": "clear && npm update && npm start"
   },
   "author": "Bryant Richardson",
   "license": "ISC",
   "dependencies": {
-    "@keystroke/nodejs": "https://api.observablehq.com/@keystroke/nodejs.tgz?v=3",
+    "@keystroke/observablehq": "https://api.observablehq.com/@keystroke/observablehq.tgz?v=3",
     "@observablehq/runtime": "^4.8.2",
     "cors": "^2.8.5",
     "express": "^4.17.1",
