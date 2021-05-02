@@ -1,6 +1,2 @@
 .DS_Store
 node_modules
-
-# Ignore package-lock so every build can download latest notebook version
-# (otherwise integrity check would fail when notebook updates)
-package-lock.json
