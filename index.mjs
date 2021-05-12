@@ -8,6 +8,6 @@ import fetch from 'node-fetch';
 runNotebook(notebook, { process, express, cors, puppeteer, fetch })
     .catch(console.error.bind(console));
 
-async function runNotebook(notebook, context = { process }, cell = 'main') {
+async function runNotebook(notebook, context, cell = 'main') {
     return await (await new Observable.Runtime().module(notebook).value(cell))(context);
 }
