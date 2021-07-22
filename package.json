@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@keystroke/observablehq": "https://api.observablehq.com/@keystroke/observablehq.tgz?v=3",
-    "@observablehq/runtime": "^4.8.2",
+    "@observablehq/runtime": "^4.12.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "node-fetch": "^2.6.1",
